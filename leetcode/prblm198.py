@@ -9,6 +9,11 @@ return the maximum amount of money you can rob tonight without alerting the poli
 '''
 class Soluiton(object):
     def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        
         if not nums:
             return 0
         if len(nums) == 1:

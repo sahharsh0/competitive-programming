@@ -1,5 +1,3 @@
-from turtle import left
-
 
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
@@ -10,7 +8,6 @@ class Solution(object):
         chmap= {}
         l = 0
         ml= 0
-        
         for right, char in enumerate(s):
             if char in chmap and chmap[char] >= l:
                 l = chmap[char] + 1
